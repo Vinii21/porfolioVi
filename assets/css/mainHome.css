@@ -1,0 +1,4 @@
+.home__img--container{
+    width: 150px;
+    clip-path: circle(50% at 50% 50%);
+}

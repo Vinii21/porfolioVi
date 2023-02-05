@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Vinicio Chavarría</title>
+    <link rel="stylesheet" href="./assets/css/fonts.css">
+    <link rel="stylesheet" href="./assets/css/global.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/mainHome.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__image--container">
+            <a href="#home"><img src="./assets/img/viniLogo.svg" alt="logo" width="100"></a>
+        </div>
+        <div class="header__icon--menu"><a href="#nav"><i class='bx bx-menu'></i></a></div>
+        <nav id="nav" class="header__nav">
+                <div class="close"><a href="#close"><i class='bx bx-x'></i></a></i></div>
+                <a class="header__nav--link" href="#about">Sobre mí</a>
+                <a class="header__nav--link" href="#projects">Portafolio</a>
+                <a class="header__nav--link" href="#contact">Contacto</a>
+            </nav>
+    </header>
+
+    <main class="main">
+        <!-- HOME -->
+        <section id="home" class="home">
+            <div class="home__container">
+                <div class="home__img--container">
+                    <img src="./assets/img/profile1.png">
+                </div>
+                <div class="home__info--container">
+                    <h1 class="home__info--title">Hola, soy Vinicio Chavarría. <br> Desarrollador Web frontend <span>con sede en Costa Rica.</span></h1>
+                    <p class="home__info--description">Entusiasta de la programación y el desarrollo de sofware para la web, enfocado en el diseño frontend.</p>
+                </div>
+            </div>
+        </section>
+        <!-- ABOUT ME -->
+        <section id="about" class="about section">
+            <div class="about__container">
+                <h2 class="about__title">Acerca de Mi</h2>
+                <p class="about__description">Me divierto desarrollando sitios web con diseños intuitivos para el usuario, adaptados a distintos dispositivos (Mobile primero). Me gusta mucho la estetica de un sitio web y su calidad con el SEO para el mejor posicionamiento web posible. Tengo experiencia con HTML, CSS, JavaScript, ReactJs, Angular y disfruto como estas tecnologías ayudan a los usuarios con todo lo que pueden ofrecer, es como hacer magia.</p>
+            </div>
+            <div class="about__skills">
+               <div class="about__cards">
+                    <!-- card 1 -->
+                    <div class="about__card">
+                        <img src="" alt="HTML">
+                    </div>
+                    <!-- card 2 -->
+                    <div class="about__card">
+                        <img src="" alt="CSS">
+                    </div>
+                    <!-- card 3 -->
+                    <div class="about__card">
+                        <img src="" alt="JavaScript">
+                    </div>
+                    <!-- card 4 -->
+                    <div class="about__card">
+                        <img src="" alt="React Js">
+                    </div>
+                    <!-- card 5 -->
+                    <div class="about__card">
+                        <img src="" alt="Angular">
+                    </div>
+               </div>
+               <div class="about__tags">
+                    <h3>Habilidades Blandas</h3>
+                    <div class="about__tags--container">
+                        <span class="about__tag">Autodidacta</span>
+                        <span class="about__tag">Responsable</span>
+                        <span class="about__tag">Trabajo en Equipo</span>
+                        <span class="about__tag">Puntual</span>
+                        <span class="about__tag">Paciente</span>
+                    </div>
+               </div>
+            </div>
+        </section>
+        <!-- PROJECTS -->
+        <section id="projects" class="projects section">
+            <h2 class="projects__title">Últimos Proyectos</h2>
+            <div class="projects__container">
+                <!-- Projecto 1 -->
+                <div class="projects__project">
+                    <div class="projects__info">
+                        <h3 class="projects__name">Example Project</h3>
+                        <span class="projects__skills">Skill skill</span>
+                        <p class="projects__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, reiciendis?</p>
+                        <span><!-- icono opcional --></span>
+                    </div>
+                    <div class="projects__image">
+                        <img src="" alt="Imagen de proyecto">
+                    </div>
+                </div>
+                <!-- Projecto 2 -->
+                <div class="projects__project">
+                    <div class="projects__info">
+                        <h3 class="projects__name">Example Project 2</h3>
+                        <span class="projects__skills">Skill skill</span>
+                        <p class="projects__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, reiciendis?</p>
+                        <span><!-- icono opcional --></span>
+                    </div>
+                    <div class="projects__image">
+                        <img src="" alt="Imagen de proyecto">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- CONTACT -->
+        <section id="contact" class="contact section">
+            <div class="contact__container">
+                <div class="contact__info">
+                    <h3 class="contact__info--title">Contacto</h3>
+                    <p class="contact__info--description">Soy muy accesible y estaría encantado de conversar contigo. Sientase libre de escribirme al WhatsApp o enviarme un mensaje a mi correo electronico. O bien puedes llenar el formulario para enviarme tú consulta.</p>
+                    <div class="contact__info--social">
+                        <a href="#"><img src="" alt="WhatsApp"></a>
+                        <a href="#"><img src="" alt="Email"></a>
+                    </div>
+                </div>
+                <div class="contact__form--container">
+                    <h3>Enviame un mensaje</h3>
+                    <form class="contact__form">
+                        <input type="text" name="name" id="name" placeholder="Nombre">
+                        <input type="email" name="email" id="email" placeholder="Email">
+                        <input type="text" name="subject" id="subject" placeholder="Asunto">
+                        <textarea name="menssage" id="message" cols="30" rows="10" placeholder="Mensaje"></textarea>
+
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+
+    </footer>
+</body>
+</html>
