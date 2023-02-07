@@ -1,0 +1,93 @@
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px 20px 0px 20px;
+}
+
+.about__container{
+    margin-top: 30px;
+    width: 95%;
+    height: auto;
+    text-align: left;
+    background: var(--color-default-header);
+    background-image: radial-gradient(circle at 15.91% 9.37%, #548dd4 0, #2f496e 60%, #070d17 100%); 
+    padding: 15px;
+    border-radius: 10%;
+    margin-bottom: 5rem;
+    border-bottom: 3px solid rgb(14, 55, 91);
+    border-left: 3px solid rgb(14, 55, 91);
+    transform: skew(2deg, 2deg);
+    box-shadow: -20px 20px 10px #0000007a;
+    transition: all 1s linear;
+}
+
+.about__container .about__title{
+    text-align: center;
+    color: var(--color-typography2);
+}
+
+.about__container .about__description{
+    color: var(--color-typography2);
+}
+
+.about__skills {
+    width: 100%;
+    padding: 0px 20px;
+}
+
+.about__skills .about__cards{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 10px;
+}
+
+.about__skills .about__cards .about__card{
+    height: 100px;
+    border-radius: 10px;
+    background-color: transparent;
+}
+
+.about__skills .about__cards .about__card img{
+    height: 100%;
+    transition: all .5s ease;
+}
+
+.about__skills .about__cards .about__card img:hover{
+    height: 90%;
+}
+
+/* .about__tags{
+    width: 100%;
+}
+
+.about__tags--title {
+    text-align: center;
+    font-size: 34px;
+}
+
+.about__tags--container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+} 
+
+.about__tags--container .about__tag{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    width: auto;
+
+    font-family: var(--font-project);
+    font-weight: var(--font-bold);
+    transition: all .5s linear;
+}
+
+.about__tags--container .about__tag:hover{
+    transform: skew(-2deg, -2deg);
+} */

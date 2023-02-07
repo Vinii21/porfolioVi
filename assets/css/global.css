@@ -25,13 +25,13 @@
     --font-semi-bold: 600;
     --font-bold: 700;
     /* colores */
-    --color-default-header: #1a0b2e;
-    --color-default-background: #442b66;
-    --color-typography1: #a362ff;
-    --color-typography-subtitle: #cc06f6;
-    --color-container: #693B93;
+    --color-default-header: #244371;
+    --color-default-background: #0F1C30;
+    --color-typography1: #3456ab;
+    --color-typography-subtitle: #C0D0EF;
+    --color-container: #C2C6CE;
     --color-btn: #2c1250;
-    --color-typogrphy2: #ffffff;
+    --color-typography2: #ffffff;
     /* margenes */
     --mr-1: 8px;
     --mr-2: 16px;
@@ -59,7 +59,7 @@ html{
 body{
     margin: 0;
     background-color: var(--color-default-background);
-    color: var(--color-typogrphy2);
+    color: var(--color-typography2);
 }
 
 main{
@@ -76,6 +76,37 @@ a{
 }
 
 img{
-    max-width: 100%;
+    width: 100%;
     height: auto;
+}
+
+h2,h3{
+    font-family: var(--font-project);
+}
+
+p{
+    font-family: var(--font-project);
+    font-size: var(--paragraf-font-size);
+}
+
+.btn{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-weight: var(--font-semi-bold);
+    cursor: pointer;
+    transition: all ease 1s;
+    background-color: var(--color-typography1);
+    color: var(--color-typography2);
+    margin-bottom: 10px;
+}
+
+.btn:hover{
+    background-color: var(--color-default-header);
+    transform: scale(0.9);
+}
+
+.icon:hover{
+    color: var(--color-typography-subtitle);
 }

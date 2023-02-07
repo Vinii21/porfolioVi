@@ -5,16 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="./assets/img/viniLogo.svg" type="image/x-icon">
     <title>Vinicio Chavarría</title>
     <link rel="stylesheet" href="./assets/css/fonts.css">
     <link rel="stylesheet" href="./assets/css/global.css">
     <link rel="stylesheet" href="./assets/css/header.css">
     <link rel="stylesheet" href="./assets/css/mainHome.css">
+    <link rel="stylesheet" href="./assets/css/mainAbout.css">
+    <link rel="stylesheet" href="./assets/css/mainProjects.css">
+    <link rel="stylesheet" href="./assets/css/mainContact.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
 </head>
 <body>
     <header class="header">
         <div class="header__image--container">
-            <a href="#home"><img src="./assets/img/viniLogo.svg" alt="logo" width="100"></a>
+            <a href="#main"><img src="./assets/img/viniLogo.svg" alt="logo" width="100"></a>
         </div>
         <div class="header__icon--menu"><a href="#nav"><i class='bx bx-menu'></i></a></div>
         <nav id="nav" class="header__nav">
@@ -25,86 +30,94 @@
             </nav>
     </header>
 
-    <main class="main">
+    <main class="main" id="main">
         <!-- HOME -->
-        <section id="home" class="home">
+        <section class="home">
             <div class="home__container">
                 <div class="home__img--container">
-                    <img src="./assets/img/profile1.png">
+                    <img class="home__img--img" src="./assets/img/profile1.png">
                 </div>
                 <div class="home__info--container">
-                    <h1 class="home__info--title">Hola, soy Vinicio Chavarría. <br> Desarrollador Web frontend <span>con sede en Costa Rica.</span></h1>
+                    <h1 class="home__info--title">Hola, soy Vinicio Chavarría. Desarrollador Web frontend <span>con sede en Costa Rica.</span></h1>
                     <p class="home__info--description">Entusiasta de la programación y el desarrollo de sofware para la web, enfocado en el diseño frontend.</p>
+                </div>
+                <div class="home__buttons">
+                    <button class="btn">Descargar CV</button>
+                    <div class="home__buttons--social">
+                        <a href="#" class="icon"><i class='bx bxl-linkedin-square'></i></a>
+                        <a href="#" class="icon"><i class='bx bxl-instagram-alt'></i></a>
+                        <a href="#" class="icon"><i class='bx bxl-whatsapp'></i></a>
+                    </div>
                 </div>
             </div>
         </section>
         <!-- ABOUT ME -->
-        <section id="about" class="about section">
+        <section id="about"  class="about section">
             <div class="about__container">
                 <h2 class="about__title">Acerca de Mi</h2>
-                <p class="about__description">Me divierto desarrollando sitios web con diseños intuitivos para el usuario, adaptados a distintos dispositivos (Mobile primero). Me gusta mucho la estetica de un sitio web y su calidad con el SEO para el mejor posicionamiento web posible. Tengo experiencia con HTML, CSS, JavaScript, ReactJs, Angular y disfruto como estas tecnologías ayudan a los usuarios con todo lo que pueden ofrecer, es como hacer magia.</p>
+                <p class="about__description">Me divierto desarrollando sitios web con diseños intuitivos para el usuario, adaptados a distintos dispositivos (Mobile primero).<br>Me gusta mucho la estetica de un sitio web y su calidad con el SEO para el mejor posicionamiento web posible. <br> Tengo experiencia con HTML, CSS, JavaScript, ReactJs, Angular y disfruto como estas tecnologías ayudan a los usuarios con todo lo que pueden ofrecer<!-- , es como hacer magia -->.</p>
             </div>
             <div class="about__skills">
                <div class="about__cards">
                     <!-- card 1 -->
                     <div class="about__card">
-                        <img src="" alt="HTML">
+                        <img src="./assets/img/HTML.svg" alt="HTML">
                     </div>
                     <!-- card 2 -->
                     <div class="about__card">
-                        <img src="" alt="CSS">
+                        <img src="./assets/img/css.svg" alt="CSS">
                     </div>
                     <!-- card 3 -->
                     <div class="about__card">
-                        <img src="" alt="JavaScript">
+                        <img src="./assets/img/js.svg" alt="JavaScript">
                     </div>
                     <!-- card 4 -->
                     <div class="about__card">
-                        <img src="" alt="React Js">
+                        <img src="./assets/img/react.svg" alt="React Js">
                     </div>
                     <!-- card 5 -->
                     <div class="about__card">
-                        <img src="" alt="Angular">
+                        <img src="./assets/img/angular.svg" alt="Angular">
                     </div>
                </div>
-               <div class="about__tags">
-                    <h3>Habilidades Blandas</h3>
+               <!-- <div class="about__tags">
+                    <h3 class="about__tags--title">Habilidades</h3>
                     <div class="about__tags--container">
-                        <span class="about__tag">Autodidacta</span>
-                        <span class="about__tag">Responsable</span>
-                        <span class="about__tag">Trabajo en Equipo</span>
-                        <span class="about__tag">Puntual</span>
-                        <span class="about__tag">Paciente</span>
+                        <div class="about__tag">Autodidacta</div>
+                        <div class="about__tag">Responsable</div>
+                        <div class="about__tag">Trabajo en Equipo</div>
+                        <div class="about__tag">Puntual</div>
+                        <div class="about__tag">Paciente</div>
                     </div>
-               </div>
+               </div> -->
             </div>
         </section>
         <!-- PROJECTS -->
         <section id="projects" class="projects section">
-            <h2 class="projects__title">Últimos Proyectos</h2>
+            <h2 class="projects__title">Proyectos Destacados</h2>
             <div class="projects__container">
                 <!-- Projecto 1 -->
                 <div class="projects__project">
-                    <div class="projects__info">
-                        <h3 class="projects__name">Example Project</h3>
-                        <span class="projects__skills">Skill skill</span>
-                        <p class="projects__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, reiciendis?</p>
-                        <span><!-- icono opcional --></span>
-                    </div>
+                    <h3 class="projects__name">Example Project</h3>
+                    <p class="projects__skills">HTML CSS JavaScript</p>
                     <div class="projects__image">
-                        <img src="" alt="Imagen de proyecto">
+                        <img src="https://mioagency.com/wp-content/uploads/2020/01/tipografia-grande-tendencias-diseno-web-2020-sitio-web.jpg" alt="Imagen de proyecto">
+                    </div>
+                    <div class="projects__info">
+                        <p class="projects__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, reiciendis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae possimus, harum quas pariatur corporis consequatur ab saepe iure quam mollitia.</p>
+                        <span><!-- icono opcional --></span>
                     </div>
                 </div>
                 <!-- Projecto 2 -->
                 <div class="projects__project">
+                    <h3 class="projects__name">Example Project 2</h3>
+                    <p class="projects__skills">Skill skill</p>
+                    <div class="projects__image">
+                        <img src="https://mioagency.com/wp-content/uploads/2020/01/tipografia-grande-tendencias-diseno-web-2020-sitio-web.jpg" alt="Imagen de proyecto" alt="Imagen de proyecto">
+                    </div>
                     <div class="projects__info">
-                        <h3 class="projects__name">Example Project 2</h3>
-                        <span class="projects__skills">Skill skill</span>
                         <p class="projects__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, reiciendis?</p>
                         <span><!-- icono opcional --></span>
-                    </div>
-                    <div class="projects__image">
-                        <img src="" alt="Imagen de proyecto">
                     </div>
                 </div>
             </div>
@@ -116,18 +129,18 @@
                     <h3 class="contact__info--title">Contacto</h3>
                     <p class="contact__info--description">Soy muy accesible y estaría encantado de conversar contigo. Sientase libre de escribirme al WhatsApp o enviarme un mensaje a mi correo electronico. O bien puedes llenar el formulario para enviarme tú consulta.</p>
                     <div class="contact__info--social">
-                        <a href="#"><img src="" alt="WhatsApp"></a>
-                        <a href="#"><img src="" alt="Email"></a>
+                        <a href="#" class="icon"><i class='bx bxl-whatsapp'></i>506 7254-8544</a>
+                        <a href="#" class="icon"><i class='bx bx-envelope'></i>viniciochavarria27@gmail.com</a>
                     </div>
                 </div>
                 <div class="contact__form--container">
                     <h3>Enviame un mensaje</h3>
                     <form class="contact__form">
-                        <input type="text" name="name" id="name" placeholder="Nombre">
-                        <input type="email" name="email" id="email" placeholder="Email">
-                        <input type="text" name="subject" id="subject" placeholder="Asunto">
+                        <input class="contact__form--input" type="text" name="name" id="name" placeholder="Nombre">
+                        <input class="contact__form--input" type="email" name="email" id="email" placeholder="Email">
+                        <input class="contact__form--input" type="text" name="subject" id="subject" placeholder="Asunto">
                         <textarea name="menssage" id="message" cols="30" rows="10" placeholder="Mensaje"></textarea>
-
+                        <button class="btn" type="submit">Enviar</button>
                     </form>
                 </div>
             </div>
@@ -135,7 +148,24 @@
     </main>
 
     <footer class="footer">
-
+        <div class="footer__container">
+            <div class="footer__links">
+                <a href=""><i class='bx bxl-github'></i></a>
+                <a href=""><i class='bx bxl-discord-alt'></i></a>
+                <a href=""><i class='bx bxl-instagram-alt'></i></a>
+            </div>
+            <div class="footer__logo">
+                <img src="./assets/img/viniLogo.svg" alt="">
+            </div>
+            <div class="footer__nav">
+                <a href="#about">Acerca de mi</a>
+                <a href="#projects">Portafolio</a>
+                <a href="#contact">Contacto</a>
+            </div>
+            <div class="footer__copyrigth">
+                <span>&copy Vinicio Chavarria | 2022</span>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
