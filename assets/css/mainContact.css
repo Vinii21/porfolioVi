@@ -59,6 +59,7 @@
     outline: none;
     font-size: var(--paragraf-font-size);
     transition: background-color 1s ease;
+    cursor: pointer;
 }
 
 .contact__form--container .contact__form--input:hover, textarea:hover{
@@ -69,6 +70,7 @@
     font-weight: var(--font-semi-bold);
     background-color: var(--color-default-background);
     color: #fff;
+    cursor: text;
 }
 
 .contact__form textarea{
