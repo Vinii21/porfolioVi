@@ -612,6 +612,35 @@ p{
     outline: none;
 }
 
+.contact__form--alert{
+    display: none;
+    transition: all 2s ease;
+}
+
+.active{
+    display: block;
+    animation: showAlert 2s ease-in infinite;
+    cursor: default;
+    color: #ed3535;
+    text-transform: uppercase;
+    font-weight: var(--font-semi-bold);
+}
+
+@keyframes showAlert {
+    0%{
+        opacity: .2;
+    }
+    25%{
+        opacity: .5;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: .2;
+    }
+}
+
 /* ================== FOOTER =================== */
 .footer{
     width: 100%;
@@ -837,7 +866,7 @@ p{
 
  @media screen and (min-width: 992px) {
     .header{
-        height: 220px;
+        height: 190px;
         background-position: 0px -30px;
     }
     .header__image--container{
