@@ -87,9 +87,10 @@ html{
 
 body{
     margin: 0;
+    padding: 0;
     background-color: var(--color-default-background);
     color: var(--color-typography2);
-    overflow-x: hidden;
+    overflow-x: visible;
 }
 
 main{
@@ -144,7 +145,7 @@ p{
 /* =========== HEADER =============== */
 
 .header {
-    width: 100vw;
+    width: 100%;
     height: 80px;
     background-image: url("../img/wave.svg");
     background-repeat: no-repeat;
@@ -463,7 +464,7 @@ p{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 .projects .projects__title{
@@ -530,6 +531,7 @@ p{
 .contact{
     width: 100%;
     padding: 20px 10px;
+    overflow-x: hidden;
 }
 
 .contact .contact__container{
