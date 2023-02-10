@@ -90,7 +90,7 @@ body{
     padding: 0;
     background-color: var(--color-default-background);
     color: var(--color-typography2);
-    overflow-x: visible;
+    overflow-x: hidden;
 }
 
 main{
