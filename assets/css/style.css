@@ -144,7 +144,7 @@ p{
 /* =========== HEADER =============== */
 
 .header {
-    width: 100%;
+    width: 100vw;
     height: 80px;
     background-image: url("../img/wave.svg");
     background-repeat: no-repeat;
@@ -154,7 +154,6 @@ p{
     z-index: 2;
     display: flex;
     justify-content: space-between;
-    overflow-x: hidden;
 }
 
 .header__image--container{
