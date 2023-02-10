@@ -295,7 +295,7 @@ p{
     position: relative;
     top: -80px;
     z-index: 1;
-    padding-top: 30px;
+    padding-top: 0px;
 }
 
 .home__img--container{
@@ -536,6 +536,7 @@ p{
     border: 1px solid #010d21;
     padding: 10px;
     border-radius: 24px;
+    position: relative;
 }
 
 .contact__container .contact__info--title{
@@ -614,31 +615,49 @@ p{
 
 .contact__form--alert{
     display: none;
+    text-align: center;
+    padding: 3px;
+    border-radius: 24px;
+    width: 250px;
+    height: 100px;
     transition: all 2s ease;
+    position: absolute;
+    top: 500px;
+    left: 20px;
+    opacity: 0;
+}
+
+.contact__form--alert p{
+    margin: 0;
+    padding: 0;
 }
 
 .active{
-    display: block;
-    animation: showAlert 2s ease-in infinite;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(246, 100, 74, 0.579);
+    backdrop-filter: blur(5px);
+    border: 5px solid var(--color-default-background);
     cursor: default;
-    color: #ed3535;
+    color: var(--color-default-background);
     text-transform: uppercase;
     font-weight: var(--font-semi-bold);
+    opacity: 1;
 }
 
-@keyframes showAlert {
-    0%{
-        opacity: .2;
-    }
-    25%{
-        opacity: .5;
-    }
-    50%{
-        opacity: 1;
-    }
-    100%{
-        opacity: .2;
-    }
+.active button:nth-child(1){
+    align-self: flex-end;
+    margin-top: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+}
+.active p:nth-child(2){
+    margin-bottom: 10px;
 }
 
 /* ================== FOOTER =================== */
@@ -674,7 +693,7 @@ p{
     color: #5549b3;
 }
 .footer__container .footer__links a:nth-child(2):hover{
-    color: #525dea;
+    color: #0a66c2;
 }
 .footer__container .footer__links a:nth-child(3):hover{
     color: #d226a7;

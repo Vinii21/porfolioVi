@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="./assets/img/viniLogo.svg" type="image/x-icon">
     <meta name="author" content="Marcelo Vinicio Chavarria Ugalde">
     <meta name="description" content="Desarrollador Frontend con sede en Costa Rica, portafolio de proyectos">
+    <link href="./assets/css/aos.css" rel="stylesheet">
     <title>Vinicio Chavarría</title>
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
@@ -28,27 +29,27 @@
         <!-- HOME -->
         <section class="home">
             <div class="home__container">
-                <div class="home__img--container">
+                <div data-aos="fade-down" data-aos-duration="1000" class="home__img--container">
                     <img class="home__img--img" src="./assets/img/profile1.png">
                 </div>
                 <div class="home__info">
                     <div class="home__info--container">
-                        <h1 class="home__info--title">Hola, soy Vinicio Chavarría. Desarrollador Web frontend <span>con sede en Costa Rica.</span></h1>
-                        <p class="home__info--description">Entusiasta de la programación y el desarrollo de sofware para la web, enfocado en el diseño frontend.</p>
+                        <h1 class="home__info--title" data-aos="fade-right" data-aos-duration="1000">Hola, soy Vinicio Chavarría. Desarrollador Web frontend <span>con sede en Costa Rica.</span></h1>
+                        <p class="home__info--description" data-aos="fade-left" data-aos-duration="1000">Entusiasta de la programación y el desarrollo de sofware para la web, enfocado en el diseño frontend.</p>
                     </div>
                     <div class="home__buttons">
-                        <button class="btn">Descargar CV</button>
+                        <a href="./assets/pdf/viniCv.pdf" download="true"><button class="btn">Descargar CV</button></a>
                         <div class="home__buttons--social">
-                            <a href="#" class="icon"><i class='bx bxl-linkedin-square'></i></a>
-                            <a href="#" class="icon"><i class='bx bxl-instagram-alt'></i></a>
-                            <a href="#" class="icon"><i class='bx bxl-whatsapp'></i></a>
+                            <a href="https://www.linkedin.com/in/vinicio-chavarria-369b18133/" target="_blank" class="icon"><i class='bx bxl-linkedin-square'></i></a>
+                            <a href="https://www.instagram.com/vinicio_chavarria/" target="_blank" class="icon"><i class='bx bxl-instagram-alt'></i></a>
+                            <a href="https://wa.me/50672548544" target="_blank" class="icon"><i class='bx bxl-whatsapp'></i></a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
         <!-- ABOUT ME -->
-        <section id="about"  class="about section">
+        <section id="about"  class="about section" data-aos="fade-down-right" data-offset="200" data-aos-duration="1000">
             <div class="about__container">
                 <h2 class="about__title">Acerca de Mi</h2>
                 <p class="about__description">Desarrollo sitios web con diseños intuitivos para el usuario, adaptados a distintos dispositivos (Mobile primero).<br>Me gusta mucho la estetica de un sitio web y su calidad con el SEO para el mejor posicionamiento web posible. <br> Tengo experiencia con HTML, CSS, JavaScript, React Js, Angular y disfruto como estas tecnologías ayudan a los usuarios con todo lo que pueden ofrecer<!-- , es como hacer magia -->.</p>
@@ -83,7 +84,7 @@
             <h2 class="projects__title">Proyectos Destacados</h2>
             <div class="projects__container">
                 <!-- Projecto 1 -->
-                <div class="projects__project">
+                <div data-aos="fade-left" data-offset="200" data-aos-duration="2000" class="projects__project">
                         <div class="projects__header">
                             <h3 class="projects__name">Example Project</h3>
                             <p class="projects__skills">HTML CSS JavaScript</p>
@@ -96,7 +97,7 @@
                         </div>
                 </div>
                 <!-- Projecto 2 -->
-                <div class="projects__project">
+                <div data-aos="fade-right" data-offset="200" data-aos-duration="2000" class="projects__project">
                         <div class="projects__header">
                             <h3 class="projects__name">Example Project 2</h3>
                             <p class="projects__skills">Skill skill</p>
@@ -112,13 +113,13 @@
         </section>
         <!-- CONTACT -->
         <section id="contact" class="contact section">
-            <div class="contact__container">
+            <div class="contact__container" data-aos="flip-up" data-offset="200" data-aos-duration="1000">
                 <div class="contact__info">
                     <h3 class="contact__info--title">Contacto</h3>
                     <p class="contact__info--description">Soy muy accesible y estaría encantado de conversar contigo. Sientase libre de escribirme al WhatsApp o enviarme un mensaje a mi correo electronico. O bien puedes llenar el formulario para enviarme tú consulta.</p>
                     <div class="contact__info--social">
-                        <a href="#" class="icon"><i class='bx bxl-whatsapp'></i>506 7254-8544</a>
-                        <a href="#" id="mail" class="icon"><i class='bx bx-envelope'></i>viniciochavarria27@gmail.com</a>
+                        <a href="https://wa.me/50672548544" target="_blank" class="icon"><i class='bx bxl-whatsapp'></i>506 7254-8544</a>
+                        <a href="mailto:viniciochavarria27@gmail.com" id="mail" class="icon"><i class='bx bx-envelope'></i>viniciochavarria27 - @gmail</a>
                     </div>
                 </div>
                 <div class="contact__form--container">
@@ -130,17 +131,16 @@
                         <textarea name="message" id="message" cols="30" rows="10" placeholder="Mensaje"></textarea>
                         <button class="btn" type="submit">Enviar</button>
                     </form>
-                    <p id="alert" class="contact__form--alert">Por favor rellene todos los campos</p>
+                    <div id="alert" class="contact__form--alert"><button id="close">❌</button><p>Por favor rellene todos los campos</p></div>
                 </div>
-            </div>
         </section>
     </main>
     <footer class="footer">
         <div class="footer__container">
             <div class="footer__links">
-                <a href=""><i class='bx bxl-github'></i></a>
-                <a href=""><i class='bx bxl-discord-alt'></i></a>
-                <a href=""><i class='bx bxl-instagram-alt'></i></a>
+                <a href="https://github.com/Vinii21" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="https://www.linkedin.com/in/vinicio-chavarria-369b18133/" target="_blank" class="icon"><i class='bx bxl-linkedin-square'></i></a>
+                <a href="https://www.instagram.com/vinicio_chavarria/" target="_blank"><i class='bx bxl-instagram-alt'></i></a>
             </div>
             <div class="footer__logo">
                 <img src="./assets/img/viniLogo.svg" alt="">
@@ -156,5 +156,9 @@
         </div>
     </footer>
     <script src="./assets/js/sendForm.js"></script>
+    <script src="./assets/js/aos.js"></script>
+    <script>
+			AOS.init();
+    </script>
 </body>
 </html>

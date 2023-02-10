@@ -4,8 +4,16 @@ const inputName = document.querySelector('#name')
 const inputEmail = document.querySelector('#email')
 const textarea = document.querySelector('#message')
 const alert = document.querySelector('#alert')
+const btnClose = document.querySelector('#close')
 
 formulario.addEventListener('submit', handleSubmit)
+btnClose.addEventListener('click', ()=>{
+  alert.style.opacity = 0
+  setTimeout(()=>{
+    alert.classList.remove('active')
+    alert.style.opacity = 1
+  },1000)
+})
 
 function handleSubmit(e) {
   e.preventDefault()
