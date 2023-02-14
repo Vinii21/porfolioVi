@@ -24,8 +24,8 @@ function handleSubmit(e) {
     sendForm.click()
     formulario.reset()
   } else {
+    alert.style.opacity = 1
     alert.classList.add('active')
-    console.log("No existe")
   }
 }
 
