@@ -88,9 +88,16 @@ html{
 body{
     margin: 0;
     padding: 0;
+    height: auto;
     background-color: var(--color-default-background);
     color: var(--color-typography2);
     overflow-x: hidden;
+}
+
+#particles-js{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
 }
 
 main{
@@ -696,6 +703,8 @@ p{
     height: 300px;
     background-color: #21252b;
     margin-top: 60px;
+    position: relative;
+    z-index: 3;
 }
 
 .footer__container{

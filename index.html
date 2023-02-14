@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
+    <div id="particles-js"></div>
     <header class="header">
         <div class="header__image--container">
             <a href="#main"><img src="./assets/img/viniLogo.svg" alt="logo" width="100"></a>
@@ -35,7 +36,7 @@
                 <div class="home__info">
                     <div class="home__info--container">
                         <h1 class="home__info--title" data-aos="fade-right" data-aos-duration="1000">Hola, soy Vinicio Chavarría. Desarrollador Web frontend <span>con sede en Costa Rica.</span></h1>
-                        <p class="home__info--description" data-aos="fade-left" data-aos-duration="1000">Entusiasta de la programación y el desarrollo de sofware para la web, enfocado en el diseño frontend.</p>
+                        <p class="home__info--description" data-aos="fade-left" data-aos-duration="1000">Entusiasta de la programación y el desarrollo de software para la web, enfocado en el diseño frontend.</p>
                     </div>
                     <div class="home__buttons">
                         <a href="./assets/pdf/viniCv.pdf" download="Vinicio Chavarria CV"><button class="btn">Descargar CV</button></a>
@@ -52,7 +53,9 @@
         <section id="about"  class="about section" data-aos="fade-down-right" data-offset="200" data-aos-duration="1000">
             <div class="about__container">
                 <h2 class="about__title">Acerca de Mi</h2>
-                <p class="about__description">Desarrollo sitios web con diseños intuitivos para el usuario, adaptados a distintos dispositivos (Mobile primero).<br>Me gusta mucho la estetica de un sitio web y su calidad con el SEO para el mejor posicionamiento web posible. <br> Tengo experiencia con HTML, CSS, JavaScript, React Js, Angular y disfruto como estas tecnologías ayudan a los usuarios con todo lo que pueden ofrecer<!-- , es como hacer magia -->.</p>
+                <p class="about__description">Desarrollo sitios web con diseños intuitivos para el usuario, adaptados a distintos dispositivos (Móvil primero).
+                    Me gusta mucho la estética de un sitio web y su calidad con el SEO para el mejor posicionamiento web posible.
+                    Tengo experiencia con HTML, CSS, JavaScript, React JS, Angular y disfruto como estas tecnologías ayudan a los usuarios con todo lo que pueden ofrecer.</p>
             </div>
             <div class="about__skills">
                <div class="about__cards">
@@ -94,21 +97,21 @@
                         </div>
                         <div class="projects__info">
                             <p class="projects__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, reiciendis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae possimus, harum quas pariatur corporis consequatur ab saepe iure quam mollitia.</p>
-                            <div class="projects__links"><i class='bx bxl-github'></i></div>
+                            <a href="/" target="_blank" class="projects__links"><i class='bx bxl-github'></i></a>
                         </div>
                 </div>
                 <!-- Projecto 2 -->
                 <div data-aos="fade-right" data-offset="200" data-aos-duration="2000" class="projects__project">
                         <div class="projects__header">
                             <h3 class="projects__name">Example Project 2</h3>
-                            <p class="projects__skills">Skill skill</p>
+                            <p class="projects__skills">React Js</p>
                             <div class="projects__image">
                                 <img src="https://mioagency.com/wp-content/uploads/2020/01/tipografia-grande-tendencias-diseno-web-2020-sitio-web.jpg" alt="Imagen de proyecto" alt="Imagen de proyecto">
                             </div>
                         </div>
                         <div class="projects__info">
                             <p class="projects__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, reiciendis?</p>
-                            <div class="projects__links"><i class='bx bxl-github'></i></div>
+                            <a href="/" target="_blank" class="projects__links"><i class='bx bxl-github'></i></a>
                         </div>
                 </div>
             </div>
@@ -157,6 +160,8 @@
             </div>
         </div>
     </footer>
+    <script src="./assets/js/particles.min.js"></script>
+    <script src="./assets/js/particlesConfing.js"></script>
     <script src="./assets/js/sendForm.js"></script>
     <script src="./assets/js/aos.js"></script>
     <script>
