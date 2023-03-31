@@ -7,13 +7,7 @@ const alert = document.querySelector('#alert')
 const btnClose = document.querySelector('#close')
 
 formulario.addEventListener('submit', handleSubmit)
-btnClose.addEventListener('click', ()=>{
-  alert.style.opacity = 0
-  setTimeout(()=>{
-    alert.classList.remove('active')
-    alert.style.opacity = 1
-  },1000)
-})
+
 
 function handleSubmit(e) {
   e.preventDefault()
@@ -24,8 +18,15 @@ function handleSubmit(e) {
     sendForm.click()
     formulario.reset()
   } else {
-    alert.style.opacity = 1
-    alert.classList.add('active')
+    Swal.fire({
+      title: 'Verifica que no haya campos vacios',
+      showClass: {
+        popup: 'animate__animated animate__fadeInDown'
+      },
+      hideClass: {
+        popup: 'animate__animated animate__fadeOutUp'
+      }
+    })
   }
 }
 

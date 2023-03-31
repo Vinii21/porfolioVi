@@ -11,6 +11,10 @@
     <link href="./assets/css/aos.css" rel="stylesheet">
     <title>Vinicio Chavarría</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
 </head>
 <body>
     <div id="particles-js"></div>
@@ -55,29 +59,25 @@
                 <h2 class="about__title">Acerca de Mi</h2>
                 <p class="about__description">Desarrollo sitios web con diseños intuitivos para el usuario, adaptados a distintos dispositivos (Móvil primero).
                     Me gusta mucho la estética de un sitio web y su calidad con el SEO para el mejor posicionamiento web posible.
-                    Tengo experiencia con HTML, CSS, JavaScript, React JS, Angular y disfruto como estas tecnologías ayudan a los usuarios con todo lo que pueden ofrecer.</p>
+                    Tengo experiencia con HTML, CSS, JavaScript, React JS y disfruto como estas tecnologías ayudan a los usuarios con todo lo que pueden ofrecer.</p>
             </div>
             <div class="about__skills">
                <div class="about__cards">
                     <!-- card 1 -->
                     <div class="about__card">
-                        <img src="./assets/img/HTML.svg" alt="HTML">
+                        <img src="./assets/img/HTML.svg" title="HTML5" alt="HTML">
                     </div>
                     <!-- card 2 -->
                     <div class="about__card">
-                        <img src="./assets/img/css.svg" alt="CSS">
+                        <img src="./assets/img/css.svg" title="CSS3" alt="CSS">
                     </div>
                     <!-- card 3 -->
                     <div class="about__card">
-                        <img src="./assets/img/js.svg" alt="JavaScript">
+                        <img src="./assets/img/js.svg" title="JavaScript" alt="JavaScript">
                     </div>
                     <!-- card 4 -->
                     <div class="about__card">
-                        <img src="./assets/img/react.svg" alt="React Js">
-                    </div>
-                    <!-- card 5 -->
-                    <div class="about__card">
-                        <img src="./assets/img/angular.svg" alt="Angular">
+                        <img src="./assets/img/react.svg" title="React Js" alt="React Js">
                     </div>
                </div>
             </div>
@@ -89,15 +89,15 @@
                 <!-- Projecto 1 -->
                 <div data-aos="fade-left" data-offset="200" data-aos-duration="2000" class="projects__project">
                         <div class="projects__header">
-                            <h3 class="projects__name">Example Project</h3>
-                            <p class="projects__skills">HTML CSS JavaScript</p>
+                            <h3 class="projects__name">Galletas de la Fortuna</h3>
+                            <p class="projects__skills">React Js CSS JSX</p>
                             <div class="projects__image">
-                                <img src="https://mioagency.com/wp-content/uploads/2020/01/tipografia-grande-tendencias-diseno-web-2020-sitio-web.jpg" alt="Imagen de proyecto">
+                                <a href="https://main--famous-stardust-7ac88d.netlify.app/" target="_blank"><img src="./assets/imgProjects/cookie.png" alt="Imagen de proyecto galletas de la fortuna"></a>
                             </div>
                         </div>
                         <div class="projects__info">
-                            <p class="projects__description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum, reiciendis? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae possimus, harum quas pariatur corporis consequatur ab saepe iure quam mollitia.</p>
-                            <a href="#" target="_blank" class="projects__links"><i class='bx bxl-github'></i></a>
+                            <p class="projects__description">Diseño integro de una sola página que muestra una frase distinta al interactuar con el botón "Descubre Otra Frase", diseño responsivo. Estilado con CSS3 y dividio en componentes que se renderizan de manera dínamica respecto a la iteracción del usuario.</p>
+                            <a href="https://github.com/Vinii21/fortune_cookies" target="_blank" class="projects__links"><i class='bx bxl-github'></i></a>
                         </div>
                 </div>
                 <!-- Projecto 2 -->
@@ -167,5 +167,6 @@
     <script>
         AOS.init();
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>
