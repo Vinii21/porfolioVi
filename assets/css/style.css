@@ -58,7 +58,7 @@
     --font-semi-bold: 600;
     --font-bold: 700;
     /* colores */
-    --color-default-header: #244371;
+    --color-default-header: #24437188;
     --color-default-background: #0F1C30;
     --color-typography1: #3456ab;
     --color-typography-subtitle: #C0D0EF;
@@ -393,7 +393,7 @@ p{
     align-items: center;
     flex-direction: column;
     width: 100%;
-    padding: 20px 20px 0px 20px;
+    padding: 10px 20px 0px 10px;
 }
 
 .about__container{
@@ -401,16 +401,11 @@ p{
     width: 95%;
     height: auto;
     text-align: left;
-    background: var(--color-default-header);
-    background-image: radial-gradient(circle at 15.91% 9.37%, #548dd4 0, #2f496e 60%, #070d17 100%); 
+    background: var(--color-default-header); 
     padding: 15px;
-    border-radius: 10%;
     margin-bottom: 5rem;
-    border-bottom: 3px solid rgb(14, 55, 91);
-    border-left: 3px solid rgb(14, 55, 91);
-    transform: skew(2deg, 2deg);
-    box-shadow: -20px 20px 10px #0000007a;
     transition: all 1s linear;
+    border-radius: 28px;
 }
 
 .about__container .about__title{
@@ -923,8 +918,8 @@ p{
         margin-top: 100px;
     }
     .about__skills .about__cards{
-        grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: repeat(1, auto);  
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(1, auto);
     }
     .about__skills .about__cards .about__card:nth-child(5){
         grid-column: 5 / 6;
@@ -1018,6 +1013,7 @@ p{
      .about__container{ 
         margin-top: 150px;
         margin-bottom: 10rem;
+        width: 50%;
     }
     .about__skills{
         width: 390px;
