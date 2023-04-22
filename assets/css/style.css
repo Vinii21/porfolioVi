@@ -545,11 +545,14 @@ p{
     font-size: 30px;
     transition: all ease 1s;
     border: 1px solid #ffffff36;
+    opacity: .7;
 }
 
 .projects .projects__links:hover{
     background-color: var(--color-default-background);
     border: 1px solid var(--color-typography-subtitle);
+    opacity: 1;
+    transform: scale(0.8);
 }
 /* ================= CONTACT ================ */
 .contact{
